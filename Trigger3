@@ -1,0 +1,11 @@
+trigger DedupeCase2 on Account (after insert) {
+    for (Account a : Trigger.new){
+        Case c = new Case();
+        
+        c.OwnerId = '0055a000006cw2j';
+        c.Subject = 'Dedupe this account';
+        c.AccountId = a.Id;
+        
+        insert c;
+    }
+}

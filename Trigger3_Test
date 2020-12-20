@@ -1,0 +1,8 @@
+@isTest
+public class DedupeCase2Test {
+    @isTest static void createAccount() {
+        Account a = new Account();
+        a.Name = 'Dedupe Account';
+        insert a;
+    }
+}

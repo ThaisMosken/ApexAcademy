@@ -1,0 +1,8 @@
+@isTest
+public class CreatesAccountFromLeadTest {
+    @isTest static void createLead() {
+        Lead l = new Lead();
+        l.LastName = 'LastNameTest';
+        insert l;
+    }
+}

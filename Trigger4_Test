@@ -2,6 +2,7 @@
 public class ChangesContactHelloWorldTest {
     @isTest static void createContact() {
         Contact c = new Contact();
+        c.LastName = 'LastNameTest';
         insert c;
     }
 }

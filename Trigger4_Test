@@ -1,0 +1,7 @@
+@isTest
+public class ChangesContactHelloWorldTest {
+    @isTest static void createContact() {
+        Contact c = new Contact();
+        insert c;
+    }
+}

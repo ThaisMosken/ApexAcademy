@@ -1,0 +1,5 @@
+trigger ChangesContactHelloWorld on Contact (before insert) {
+    for (Contact con : Trigger.new){
+        con.Email = 'hello@world.com';
+    }
+}
